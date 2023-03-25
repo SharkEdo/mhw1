@@ -1,0 +1,302 @@
+/*Specifiche del body */
+:root{
+	--primary-color: #293133;	
+}
+
+body {
+	background-color: var(--primary-color);
+	margin: 0;
+	font-family: 'Farsan', sans-serif;
+}
+
+/*Specifiche della NavBar*/
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10%;
+	width: 100%;
+	background-color: Navy;
+	border: 2px solid yellow;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+}
+
+a.but-navbar{
+  font-weight: bold;
+  font-size: 24px;
+  background-color: Blue;
+  color: yellow;
+  padding: 5px 15px;
+  border: 3px solid yellow;
+  border-radius: 50px ;
+  cursor: pointer;
+}
+
+a.but-navbar:hover {
+  background-color: yellow;
+  color: navy;
+}
+
+/*Specifiche della Header*/
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  
+	height: 500px;
+	background-image: url("Immagini/header.jpg");
+	background-size: cover;
+	border: 2px solid yellow;
+	position: relative;
+	z-index: -1;
+}
+
+#overlay{
+	background-color: rgba(0, 0, 0, .3);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+
+header p.tit-header{
+	color: yellow;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	font-size: 100px;
+	width: 780px;
+	text-align: center;
+	z-index: 1;
+}
+
+/*Specifiche Pagina intera*/
+
+#main-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+#imm-profile{
+	background-image: url(Immagini/Woody.png);
+	background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+	position: relative;
+	top: -50px;
+}
+
+#txt-profile{
+	color: yellow;
+	border-bottom: 1px solid yellow;
+	position: relative;
+	top: -50px;
+	text-align: center;
+	line-height: normal;
+	width: 25%;
+}
+
+/*Specifiche delle sezioni*/
+section.block{
+  display: flex;
+  background-color: navy;
+  margin: 75px 100px;
+  width: 66.67%;
+  height: auto;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  border: 2px solid yellow;
+}
+
+span.number{
+	margin-right: 40px;
+	color: yellow;
+	font-weight: Demi Bold;
+	font-style: italic;
+	font-family: ; 
+	font-size: 3rem;
+	line-height: auto;
+}
+
+div.text{
+  background-color: blue;
+  padding: 15px;
+}
+
+span.title{
+	color: Yellow;
+	font-weight: demi bold;
+	font-style: italic;
+	font-family: ; 
+	font-size: 3rem;
+	line-height: 20px;
+}
+
+p.text-info{
+	color: white;
+	font-weight: Normal;
+	font-style: Normal;
+	font-family: ; 
+	font-size: 1.30rem;
+	line-height: auto;
+}
+
+.image{
+	  display:block;
+      margin:0px auto;
+      text-align:center;
+	  background-size: cover;
+	  width: 75%;
+	  height: auto;
+}
+
+
+
+/*Specifiche del Footer*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15%;
+	background-color: whitesmoke;
+	position: absolute;
+	margin-bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* Tablet */
+
+@media (max-width: 1280px) {
+	
+#txt-profile{
+font-size: 0.75rem;
+}
+
+a.but-navbar{
+  font-size: 20px;
+  padding: 5px 13px;
+  border: 2px solid yellow;
+}
+
+header p.tit-header{
+	font-size: 80px;
+	width: 500px;
+}
+
+section.block{
+  margin: 50px 75px;
+  width: 75%;
+  height: auto;
+  padding: 15px;
+  margin-top: 45px;
+  margin-bottom: 85px;
+}
+
+span.number{
+	margin-right: 30px;
+	font-size: 2.5rem;
+}
+
+div.text{
+  padding: 10px;
+}
+
+span.title{
+	font-size: 2.5rem;
+	line-height: 35px;
+}
+
+p.text-info{
+	font-size: 1rem;
+	line-height: auto;
+}
+
+.image{
+	  width: 70%;
+	  height: auto;
+}
+
+footer{
+	height: 14%;
+	font-size: 	1rem;
+}
+}
+
+
+/* Telefono */
+
+@media (max-width: 576px) {
+#txt-profile{
+font-size: 0.5rem;
+}
+nav{
+	height: 9%;
+}
+
+a.but-navbar{
+  font-size: 15px;
+  padding: 3px 10px;
+  border: 1px solid yellow;
+}
+
+	
+header {
+	width: 100%;
+}
+
+header p.tit-header{
+	font-size: 65px;
+	width: 250px;
+}
+
+section.block{
+  margin: 25px 50px;
+  width: 85%;
+  height: auto;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+span.number{
+	margin-right: 20px;
+	font-size: 2rem;
+}
+
+div.text{
+  padding: 7.5px;
+}
+
+span.title{
+	font-size: 2rem;
+	line-height: 20px;
+}
+
+p.text-info{
+	font-size: 0.75rem;
+	line-height: auto;
+}
+
+.image{
+	  width: 50%;
+	  height: auto;
+}
+
+footer{
+	height: 13%;
+	font-size: 	0.75rem;
+}
+}
